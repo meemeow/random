@@ -6,10 +6,24 @@
 }
 
 /* first body of the page */
-#preBody{
-    height: 100vh;
-    background-image: linear-gradient(to bottom, #c9f4ff, #82cdff);
-    transition: background 0.5s; 
+#preBody {
+  height: 100vh;
+  background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+  background-size: 150% 100%;
+  animation: breathingRainbow 5s infinite;
+  transition: background 0.5s;
+}
+
+@keyframes breathingRainbow {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 /* Hide all buttons by default */
