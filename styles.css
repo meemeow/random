@@ -43,8 +43,18 @@
 
 /* to easily place the buttons randomly in the page */
 .myButton {
-    display: none; 
-    position: absolute; 
+  display: none; 
+  position: absolute;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  font-size: 15px;
+}
+
+.myButton:hover {
+  background-color: white;
+  color: none;
+  transform: scale(1.1);
 }
 
 /* after prebody */
